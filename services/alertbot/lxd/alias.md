@@ -1,4 +1,4 @@
-In ~/.bash_aliases:
+In ``~/.bash_aliases``:
 ```bash
 alias lxcl='lxc ls -c nsm4t,config:image.os,config:image.release'
 ```
