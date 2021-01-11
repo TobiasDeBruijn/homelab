@@ -1,0 +1,30 @@
+version: '3.5'
+services:
+  gitea:
+    image: gitea/gitea:latest
+    container_name: gitea
+    environment:
+     - USER_UID=998
+     - USER_GID=998
+     - DB_TYPE=mysql
+     - DB_HOST=[REDACTED]
+     - DB_NAME=[REDACTED]
+     - DB_USER=[REDACTED]
+     - DB_PASSWD=[REDACTED]
+    restart: unless-stopped
+    volumes:
+     - '/data/gitea/data:/data'
+     - '/etc/timezone:/etc/timezone:ro'
+     - '/etc/localtime:/etc/localtime:ro'
+     - '/mnt/vmstorage/backups/gitea:/backup'
+    labels:
+     - "traefik.enable=true"
+     - "traefik.http.routers.gitea-web.rule=Host(`gitea.apps.thedutchmc.nl`)"
+     - "traefik.http.routers.gitea-web.entrypoints=web"
+     - "traefik.http.services.gitea-web.loadbalancer.server.port=3000"
+    networks:
+     - traefik-net
+
+networks:
+  traefik-net:
+    external: true
