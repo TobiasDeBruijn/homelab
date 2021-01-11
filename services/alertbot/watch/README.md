@@ -3,7 +3,7 @@ AlertBot Watch is the component of AlertBot you install on all your clients.
 
 ## Install
 ```
-https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/alertbot/watch/install.sh && sudo chmod +x install.sh && sudo ./install.sh
+wget https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/alertbot/watch/install.sh && sudo chmod +x install.sh && sudo ./install.sh
 ```
 
 ## Technical
