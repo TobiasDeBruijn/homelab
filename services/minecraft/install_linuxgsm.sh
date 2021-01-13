@@ -258,11 +258,6 @@ chmod u+rwx /data/server/serverfiles/server.jar
 rm -r /data/spigot
 rm /data/server/serverfiles/minecraft_server.jar
 
-cd /data/server/
-
-#Start the server
-sudo -u mcserver /data/server/mcserver start
-
 #Automatically start the server at boot
 tee -a /etc/systemd/system/start_server.service << EOT
 [Unit]
