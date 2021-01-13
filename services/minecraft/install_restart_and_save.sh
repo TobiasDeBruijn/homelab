@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir /home/mcserver
 mkdir /data/scripts
 cd /data/scripts
+
 wget -q https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/minecraft/restart.sh
 wget -q https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/minecraft/restart_15.sh
 wget -q https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/minecraft/restart_5.sh
