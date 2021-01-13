@@ -1,5 +1,15 @@
 # Minecraft scripts
 
+## Install
+Install LinuxGSM and the latest Spigot:
+```bash
+wget https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/minecraft/install_linuxgsm.sh && chmod +x install_linuxgsm.sh && sudo ./install_linuxgsm.sh
+```
+Install automatic restart and saving:
+```
+wget https://raw.githubusercontent.com/TheDutchMC/homelab/main/services/minecraft/install_restart_and_save.sh && chmod +x install_restart_and_save.sh && sudo ./install_restart_and_save.sh
+```
+
 ## Cronjobs:
 ``root``:  
 Backup every hour, on HOUR:30
