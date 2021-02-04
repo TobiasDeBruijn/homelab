@@ -26,8 +26,9 @@ sudo -u mcserver bash mcserver auto-install
 # javaram="2048"
 # executable="java -Xmx${javaram}M -jar ${serverfiles}/server.jar"
 rm /data/server/lgsm/config-lgsm/mcserver/mcserver.cfg
+echo startparameters=\"nogui\" >> /data/server/lgsm/config-lgsm/mcserver/mcserver.cfg
 echo javaram=\"2048\" >> /data/server/lgsm/config-lgsm/mcserver/mcserver.cfg
-echo executable=\"java -Xmx\${javaram}M -jar \${serverfiles}/server.jar\" >> /data/server/lgsm/config-lgsm/mcserver/mcserver.cfg
+echo executable=\"./server.jar\" >> /data/server/lgsm/config-lgsm/mcserver/mcserver.cfg
 
 #Minecraft config
 rm /data/server/serverfiles/server.properties
