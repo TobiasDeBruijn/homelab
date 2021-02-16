@@ -13,16 +13,20 @@ services:
       - "--accesslog=true"
       - "--accesslog.filepath=/srv/docker/traefik/access.log"
       - "--serverstransport.insecureskipverify=true"
-      - "--entryPoints.ws.address=:9666"
     ports:
       - "8666:8666"
-      - "8086:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
       - "./:/srv/docker/traefik"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.apps.thedutchmc.nl`)"
+      - "traefik.http.routers.traefik.entrypoints=web"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+      - "traefik.docker.network=traefik-net"
     networks:
-    - traefik-net
+      - traefik-net
 
 networks:
- traefik-net:
-  external: true
+  traefik-net:
+    external: true
