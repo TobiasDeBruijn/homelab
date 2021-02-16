@@ -47,45 +47,54 @@ services:
     icon: "fas fa-server"
     items:
        - name: "Sonarr"
+         subtitle: "Movies"
          logo: "assets/custom/sonarr.png"
          url: "https://sonarr.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Radarr"
+         subtitle: "TV Shows"
          logo: "assets/custom/radarr.png"
          url: "https://radarr.apps.thedutchmc.nl"
-         target: "_blank"
+
+       - name: "Lidarr"
+         subtitle: "Music"
+         logo: "assets/custom/lidarr.png"
+         url: "https://lidarr.apps.thedutchmc.nl"
+
        - name: "Bazarr"
+         subtitle: "Subtitles"
          logo: "assets/custom/bazarr.png"
          url: "https://bazarr.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Jackett"
+         subtitle: "Torrent Indexer"
          logo: "assets/custom/jackett.png"
          url: "https://jackett.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Transmission"
+         subtitle: "Torrent Download Client"
          logo: "assets/custom/transmission.png"
          url: "https://transmission.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Proxmox"
          logo: "assets/custom/proxmox.png"
          url: "https://proxmox.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Traefik"
          logo: "assets/custom/traefik.png"
          url: "https://traefik.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "MariaDB"
          logo: "assets/custom/mariadb.png"
          url: "https://phpmyadmin.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Gitea"
          logo: "assets/custom/gitea.png"
          url: "https://gitea.apps.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Portainer"
          logo: "assets/custom/portainer.png"
          url: "https://portainer.apps.thedutchmc.nl"
-         target: "_blank"
 
   # Entertainment
   - name: "Entertainment"
@@ -94,15 +103,15 @@ services:
        - name: "Jellyfin"
          logo: "assets/custom/jellyfin.png"
          url: "https://media.thedutchmc.nl"
-         target: "_blank"
+
        - name: "Netflix"
          logo: "assets/custom/netflix.png"
          url: "https://netflix.com"
-         target: "_blank"
+
        - name: "YouTube"
          logo: "assets/custom/youtube.png"
          url: "https://youtube.com"
-         target: "_blank"
+
 
   # Social media links
   - name: "Social Media"
@@ -111,19 +120,19 @@ services:
        - name: "Reddit"
          logo: "assets/custom/reddit.png"
          url: "https://reddit.com"
-         target: "_blank"
+
        - name: "Twitter"
          logo: "assets/custom/twitter.png"
          url: "https://twitter.com"
-         target: "_blank"
+
        - name: "Instagram"
          logo: "assets/custom/instagram.png"
          url: "https://instagram.com"
-         target: "_blank"
+
        - name: "GitHub"
          logo: "assets/custom/github.png"
          url: "https://github.com"
-         target: "_blank"
+
 
   #Muce stuff
   - name: "Muce"
@@ -132,8 +141,7 @@ services:
        - name: "Muce Traefik"
          logo: "assets/custom/traefik.png"
          url: "http://192.168.1.201:8082/dashboard/#/"
-         target: "_blank"
+
        - name: "Muce Website"
          #logo: "assets/custom/reddit.png"
          url: "https://muce-code.github.io/muce"
-         target: "_blank"
