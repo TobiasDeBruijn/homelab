@@ -108,6 +108,30 @@ services:
     mediastack-net:
       ipv4_address: 172.10.20.5
 
+ # Lidarr - Music
+ lidarr:
+  image: linuxserver/lidarr
+  container_name: lidarr
+  restart: unless-stopped
+  environment:
+  - PUID=1000
+  - GUID=1000
+  - TZ=Europe/Amsterdam
+  volumes:
+  - "/data/mediastack/lidarr:/config"
+  - "/mnt/media/music:/music"
+  - "/mnt/vmstorage/transmission/completed/supermicro1:/data/completed/supermicro1"
+  labels:
+  - "traefik.enable=true"
+  - "traefik.http.routers.lidarr.rule=Host(`lidarr.apps.thedutchmc.nl`)"
+  - "traefik.http.routers.lidarr.entrypoints=web"
+  - "traefik.http.services.lidarr.loadbalancer.server.port=8686"
+  - "traefik.docker.network=traefik-net"
+  networks:
+    traefik-net: {}
+    mediastack-net:
+      ipv4_address: 172.10.20.6
+
 networks:
  traefik-net:
   external: true
