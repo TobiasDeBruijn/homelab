@@ -1,8 +1,15 @@
 ---
 title: "Dashboard"
 subtitle: "Tobias de Bruijn"
-logo: "custom/logo.png"
+
+# TODO: Make profile icon transparent and replace stock logo
+logo: "logo.png"
+#logo: "custom/logo.png"
+
+connectivityCheck: true
+
 header: true
+footer: ""
 links: {}
 
 #Optional theme customization
@@ -37,7 +44,7 @@ services:
 
   # Applications
   - name: "Applications"
-    icon: "fas fa-cloud"
+    icon: "fas fa-server"
     items:
        - name: "Sonarr"
          logo: "assets/custom/sonarr.png"
@@ -78,7 +85,7 @@ services:
 
   # Entertainment
   - name: "Entertainment"
-    icon: "fas fa-cloud"
+    icon: "fas fa-film"
     items:
        - name: "Jellyfin"
          logo: "assets/custom/jellyfin.png"
@@ -95,7 +102,7 @@ services:
 
   # Social media links
   - name: "Social Media"
-    icon: "fas fa-cloud"
+    icon: "fas fa-hashtag"
     items:
        - name: "Reddit"
          logo: "assets/custom/reddit.png"
@@ -112,4 +119,17 @@ services:
        - name: "GitHub"
          logo: "assets/custom/github.png"
          url: "https://github.com"
+         target: "_blank"
+
+  #Muce stuff
+  - name: "Muce"
+    icon: "fas fa-code"
+    items:
+       - name: "Muce Traefik"
+         logo: "assets/custom/traefik.png"
+         url: "http://192.168.1.201:8082/dashboard/#/"
+         target: "_blank"
+       - name: "Muce Website"
+         #logo: "assets/custom/reddit.png"
+         url: "https://muce-code.github.io/muce"
          target: "_blank"
