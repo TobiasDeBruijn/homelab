@@ -82,6 +82,10 @@ services:
          logo: "assets/custom/gitea.png"
          url: "https://gitea.apps.thedutchmc.nl"
          target: "_blank"
+       - name: "Portainer"
+         logo: "assets/custom/portainer.png"
+         url: "https://portainer.apps.thedutchmc.nl"
+         target: "_blank"
 
   # Entertainment
   - name: "Entertainment"
