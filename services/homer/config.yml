@@ -40,8 +40,61 @@ colors:
 
 services:
 
-  # Applications
-  - name: "Applications"
+  # Social media links
+  - name: "Social Media"
+    icon: "fas fa-hashtag"
+    items:
+       - name: "Reddit"
+         logo: "assets/custom/reddit.png"
+         url: "https://reddit.com"
+         target: "_top"
+
+       - name: "Twitter"
+         logo: "assets/custom/twitter.png"
+         url: "https://twitter.com"
+         target: "_top"
+
+       - name: "Instagram"
+         logo: "assets/custom/instagram.png"
+         url: "https://instagram.com"
+         target: "_top"
+
+       - name: "GitHub"
+         logo: "assets/custom/github.png"
+         url: "https://github.com"
+         target: "_top"
+
+       - name: "Gmail"
+         logo: "assets/custom/gmail.png"
+         url: "https://gmail.com"
+         target: "_top"
+
+  # Entertainment
+  - name: "Entertainment"
+    icon: "fas fa-film"
+    items:
+       - name: "Jellyfin"
+         logo: "assets/custom/jellyfin.png"
+         url: "https://media.thedutchmc.nl"
+         target: "_top"
+
+       - name: "Netflix"
+         logo: "assets/custom/netflix.png"
+         url: "https://netflix.com"
+         target: "_top"
+
+       - name: "YouTube"
+         logo: "assets/custom/youtube.png"
+         url: "https://youtube.com"
+         target: "_top"
+
+       - name: "Twitch"
+         logo: "assets/custom/twitch.png"
+         url: "https://twitch.tv"
+         target: "_top"
+
+  # Homelab
+  - name: "Homelab"
     icon: "fas fa-server"
     items:
        - name: "Sonarr"
@@ -105,47 +158,9 @@ services:
          url: "https://portainer.apps.thedutchmc.nl"
          target: "_top"
 
-  # Entertainment
-  - name: "Entertainment"
-    icon: "fas fa-film"
-    items:
-       - name: "Jellyfin"
-         logo: "assets/custom/jellyfin.png"
-         url: "https://media.thedutchmc.nl"
-         target: "_top"
-
-       - name: "Netflix"
-         logo: "assets/custom/netflix.png"
-         url: "https://netflix.com"
-         target: "_top"
-
-       - name: "YouTube"
-         logo: "assets/custom/youtube.png"
-         url: "https://youtube.com"
-         target: "_top"
-
-  # Social media links
-  - name: "Social Media"
-    icon: "fas fa-hashtag"
-    items:
-       - name: "Reddit"
-         logo: "assets/custom/reddit.png"
-         url: "https://reddit.com"
-         target: "_top"
-
-       - name: "Twitter"
-         logo: "assets/custom/twitter.png"
-         url: "https://twitter.com"
-         target: "_top"
-
-       - name: "Instagram"
-         logo: "assets/custom/instagram.png"
-         url: "https://instagram.com"
-         target: "_top"
-
-       - name: "GitHub"
-         logo: "assets/custom/github.png"
-         url: "https://github.com"
+       - name: "CloudFlare"
+         logo: "assets/custom/cloudflare.png"
+         url: "https://cloudflare.com"
          target: "_top"
 
   #Muce stuff
@@ -158,6 +173,6 @@ services:
          target: "_top"
 
        - name: "Muce Website"
-         #logo: "assets/custom/reddit.png"
+         icon: "fas fa-globe"
          url: "https://muce-code.github.io/muce"
          target: "_top"
