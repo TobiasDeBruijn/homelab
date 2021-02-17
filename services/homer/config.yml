@@ -2,9 +2,7 @@
 title: "Dashboard"
 subtitle: "Tobias de Bruijn"
 
-# TODO: Make profile icon transparent and replace stock logo
-logo: "logo.png"
-#logo: "custom/logo.png"
+logo: "/assets/custom/logo.png"
 
 connectivityCheck: true
 
@@ -50,51 +48,62 @@ services:
          subtitle: "Movies"
          logo: "assets/custom/sonarr.png"
          url: "https://sonarr.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Radarr"
          subtitle: "TV Shows"
          logo: "assets/custom/radarr.png"
          url: "https://radarr.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Lidarr"
          subtitle: "Music"
          logo: "assets/custom/lidarr.png"
          url: "https://lidarr.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Bazarr"
          subtitle: "Subtitles"
          logo: "assets/custom/bazarr.png"
          url: "https://bazarr.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Jackett"
          subtitle: "Torrent Indexer"
          logo: "assets/custom/jackett.png"
          url: "https://jackett.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Transmission"
          subtitle: "Torrent Download Client"
          logo: "assets/custom/transmission.png"
          url: "https://transmission.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Proxmox"
          logo: "assets/custom/proxmox.png"
          url: "https://proxmox.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Traefik"
          logo: "assets/custom/traefik.png"
          url: "https://traefik.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "MariaDB"
          logo: "assets/custom/mariadb.png"
          url: "https://phpmyadmin.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Gitea"
          logo: "assets/custom/gitea.png"
          url: "https://gitea.apps.thedutchmc.nl"
+         target: "_top"
 
        - name: "Portainer"
          logo: "assets/custom/portainer.png"
          url: "https://portainer.apps.thedutchmc.nl"
+         target: "_top"
 
   # Entertainment
   - name: "Entertainment"
@@ -103,15 +112,17 @@ services:
        - name: "Jellyfin"
          logo: "assets/custom/jellyfin.png"
          url: "https://media.thedutchmc.nl"
+         target: "_top"
 
        - name: "Netflix"
          logo: "assets/custom/netflix.png"
          url: "https://netflix.com"
+         target: "_top"
 
        - name: "YouTube"
          logo: "assets/custom/youtube.png"
          url: "https://youtube.com"
-
+         target: "_top"
 
   # Social media links
   - name: "Social Media"
@@ -120,19 +131,22 @@ services:
        - name: "Reddit"
          logo: "assets/custom/reddit.png"
          url: "https://reddit.com"
+         target: "_top"
 
        - name: "Twitter"
          logo: "assets/custom/twitter.png"
          url: "https://twitter.com"
+         target: "_top"
 
        - name: "Instagram"
          logo: "assets/custom/instagram.png"
          url: "https://instagram.com"
+         target: "_top"
 
        - name: "GitHub"
          logo: "assets/custom/github.png"
          url: "https://github.com"
-
+         target: "_top"
 
   #Muce stuff
   - name: "Muce"
@@ -141,7 +155,9 @@ services:
        - name: "Muce Traefik"
          logo: "assets/custom/traefik.png"
          url: "http://192.168.1.201:8082/dashboard/#/"
+         target: "_top"
 
        - name: "Muce Website"
          #logo: "assets/custom/reddit.png"
          url: "https://muce-code.github.io/muce"
+         target: "_top"
