@@ -3,7 +3,7 @@
 #Dependencies
 apt update
 apt install -y openjdk-11-jre-headless sudo
-dpkg --add-architecture i386; sudo apt update -y; sudo apt install -y curl wget file tar bzip2 gzip unzip bsdmainutils python util-linux ca-certificates binutils bc jq tmux netcat git
+dpkg --add-architecture i386; sudo apt update -y; sudo apt install -y curl wget file tar bzip2 gzip unzip bsdmainutils python util-linux ca-certificates binutils bc jq tmux netcat git cpio lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386
 
 #User and server dir
 useradd -r -m mcserver
