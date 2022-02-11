@@ -51,7 +51,7 @@ network-compression-threshold=-1
 max-tick-time=60000
 use-native-transport=true
 max-players=20
-online-mode=false
+online-mode=true
 enable-status=true
 allow-flight=false
 broadcast-rcon-to-ops=true
@@ -97,7 +97,7 @@ config-version: 12
 settings:
   save-user-cache-on-stop-only: false
   sample-count: 12
-  bungeecord: true
+  bungeecord: false
   player-shuffle: 0
   user-cache-size: 1000
   moved-wrongly-threshold: 0.0625
